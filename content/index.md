@@ -2,10 +2,11 @@
 Title: Home
 Description: This is our index page.
 ---
-
-Home page
+Maria Bjuvsjö . 
 ==========================
-
-The source for this page is in `content/index.md`.
-
-This is a sample home page written in markdown with some frontmatter defined.
+future webdeveloper .
+--------------------------
+![me](image/IMG_20200712_140345_936.jpg?w=200&h=300)
+<div class="main-text" markdown="1">
+Hej.  Maria heter jag och går webbproggrammering 120p på BTH. Jag älskar verkligen min ny upptäckta passion att göra hemsidor med hjälp av HTML och CSS.
+</div>
