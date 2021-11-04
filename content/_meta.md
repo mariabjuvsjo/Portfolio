@@ -1,5 +1,5 @@
 ---
-Logo: image/jag_och_naomi.jpg
+Logo: image/me+naomi.jpg
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
