@@ -1,0 +1,25 @@
+
+/*-----------------------
+    HEADER
+-------------------*/
+.site-header {
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.site-header .logo {
+    max-width: fit-content;
+}
+
+.site-header .logo img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.site-header .title {
+    display: none;
+}

@@ -1,0 +1,44 @@
+/*-----------------------
+    TYPOGRAPHY
+-------------------*/
+@import 'varibles';
+
+body {
+    line-height: 1.4;
+}
+
+h1 {
+    color: $accent-color;
+    letter-spacing: 3px;
+    font-family: $main-font;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2 {
+    color: $accent-color-alt;
+    text-transform: capitalize;
+    font-family: $main-font;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.25em;
+    font-family: $text-font;
+    margin-bottom: 1.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: $accent-color-alt;
+    transition: $hover-transition;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+

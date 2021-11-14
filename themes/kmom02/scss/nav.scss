@@ -1,0 +1,24 @@
+
+/*-----------------------
+    NAV
+-------------------*/
+.logo {
+    padding: 1em;
+}
+
+.nav {
+    margin-right: 1em;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: $text-font;
+    color: $accent-color-alt;
+    transition: $hover-transition;
+}
+
+.nav a:hover {
+    color: $accent-color;
+    font-size: larger;
+
+}
