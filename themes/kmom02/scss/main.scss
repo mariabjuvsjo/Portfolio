@@ -2,38 +2,8 @@
    MAIN CONTENT
 -------------------*/
 
-
-
-
-
-
 .main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
-    /*vill köra grid här men väntar tills vi kommer dit*/
-    display: grid;
-    grid-auto-columns: auto;
-    gap: 20px;
-    min-height: 500px;
-    justify-items: center;
-    align-content: center;
+    min-height: 100vh;
 }
-
-.main img {
-    outline: 4px solid $accent-color-alt;
-    opacity: 0.7;
-    transition: $hover-transition;
-    
-    &:hover {
-        outline: 2px solid $accent-color;
-        outline-offset: 0.5em;
-        opacity: 1;
-    
-    }
-    
-}
-
-
-
-

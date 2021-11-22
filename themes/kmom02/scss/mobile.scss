@@ -3,23 +3,19 @@
     transition: height 0.5s ease-in !important;
 }
 
-
-
 .nav-toggle {
     display: none;
 }
 
 @media (max-width: 767px) {
-
-
     /*-----------------------
-        NAV
-    -------------------*/
+          NAV
+      -------------------*/
     .nav a,
     .nav-toggle {
-        color: #ec6550;
+        color: $accent-color-alt;
     }
-    
+
     .js .nav-toggle {
         display: block;
         width: 2em;
@@ -31,12 +27,10 @@
 
     /*-----------------------
         MAIN
-    -------------------*/
-    
+  -------------------*/
+
     .main {
         width: 90%;
         padding-bottom: 50px;
     }
-
-
 }

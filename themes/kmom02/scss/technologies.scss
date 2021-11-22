@@ -1,0 +1,97 @@
+.main.tech {
+    max-width: 1200px;
+    perspective: 50rem;
+    margin-bottom: 60px;
+}
+
+.tech-grid {
+    align-self: start;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    transform: rotateY(30deg);
+    transition: transform 900ms ease-in-out;
+}
+
+.tech-box {
+    border: 1px solid #0000;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0.5em;
+    transition: transform 400ms ease-in-out;
+}
+
+.tech-box:hover,
+.tech-box:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 1em;
+}
+
+.tech-box img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.tech-grid > :nth-child(1) {
+    filter: invert(35%) sepia(75%) saturate(2570%) hue-rotate(271deg)
+    brightness(91%) contrast(101%);
+    grid-row: 1 / 2;
+}
+
+.tech-grid > :nth-child(2) {
+    filter: invert(61%) sepia(96%) saturate(5739%) hue-rotate(291deg)
+    brightness(94%) contrast(94%);
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.tech-grid > :nth-child(2)::before {
+    content: 'GIT';
+}
+
+.tech-grid > :nth-child(3) {
+    filter: invert(31%) sepia(64%) saturate(2264%) hue-rotate(321deg)
+    brightness(95%) contrast(91%);
+    grid-row: 1 / 2;
+    grid-column: 2 / span 2;
+}
+
+.tech-grid > :nth-child(4) {
+    filter: invert(30%) sepia(100%) saturate(5362%) hue-rotate(248deg)
+    brightness(92%) contrast(98%);
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+}
+
+.tech-grid > :nth-child(5) {
+    filter: invert(39%) sepia(70%) saturate(1540%) hue-rotate(203deg)
+    brightness(93%) contrast(95%);
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+.tech-grid > :nth-child(6) {
+    filter: invert(73%) sepia(82%) saturate(832%) hue-rotate(150deg)
+    brightness(104%) contrast(109%);
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.tech-grid > :nth-child(6)::before {
+    content: 'PYTHON ';
+}
+
+.tech-grid > :nth-child(7) {
+    filter: invert(38%) sepia(80%) saturate(5834%) hue-rotate(286deg)
+    brightness(92%) contrast(104%);
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.tech-grid > :nth-child(7)::before {
+    content: 'SQLite';
+}

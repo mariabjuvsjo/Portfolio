@@ -1,0 +1,72 @@
+.tech-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.tech-wrapper .side-bar {
+    margin-right: 10px;
+}
+
+.side-bar ul {
+    list-style: none;
+
+    li {
+        width: 120px;
+        padding: 10px 15px;
+        text-align: center;
+        border: 0.5px solid rgb(147, 147, 147);
+        border-right: transparent;
+        border-left: transparent;
+        transition: $hover-transition;
+    }
+
+    li:hover {
+        border: 2px solid $accent-color;
+        border-right: transparent;
+        border-left: transparent;
+    }
+}
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content .syntax {
+    background-color: rgb(183, 207, 215);
+    border: 3px solid $accent-color-alt;
+    box-shadow: inset 0 0 0.5em $accent-color-alt, 0 0 0.5em $accent-color-alt;
+    color: #252525;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.html {
+    color: #e8436d;
+}
+
+.css {
+    color: #d038e8;
+}   
+
+.git {
+    color: #cf37e6;
+}
+
+.js {
+    color: #9c49c1;
+}
+
+.python {
+    color: #34faff;
+}
+
+.sql {
+    color: #cd1dd2;
+}
+
+.php {
+    color: #3677e8;
+}
+
+

@@ -1,0 +1,47 @@
+@media (max-width: 700px) {
+    .main.tech {
+        perspective: unset;
+    }
+    
+    .tech-grid {
+        display: grid;
+        max-width: 90%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        'css css css css css css'
+        'html html html . . .'
+        'js js js js js js'
+        'git git git . . .'
+        'sql sql sql sql sql sql'
+        'php php php . . .'
+        'python python python python python python';
+    }
+
+    .tech-grid > :nth-child(1) {
+        grid-area: css;
+    }
+
+    .tech-grid > :nth-child(2) {
+        grid-area: git;
+    }
+
+    .tech-grid > :nth-child(3) {
+        grid-area: html;
+    }
+
+    .tech-grid > :nth-child(4) {
+        grid-area: js;
+    }
+
+    .tech-grid > :nth-child(5) {
+        grid-area: php;
+    }
+
+    .tech-grid > :nth-child(6) {
+        grid-area: python;
+    }
+
+    .tech-grid > :nth-child(7) {
+        grid-area: sql;
+    }
+}
