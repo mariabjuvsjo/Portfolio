@@ -1,8 +1,6 @@
 /*-----------------------
     TYPOGRAPHY
 -------------------*/
-@import 'varibles';
-
 body {
     line-height: 1.4;
 }
@@ -11,7 +9,7 @@ h1 {
     color: $accent-color;
     letter-spacing: 3px;
     font-family: $main-font;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: capitalize;
     text-align: center;
 }
@@ -20,24 +18,26 @@ h2 {
     color: $accent-color-alt;
     text-transform: capitalize;
     font-family: $main-font;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 100;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.4em;
     font-family: $text-font;
     margin-bottom: 1.75rem;
+    font-weight: lighter;
 }
 
 a {
     text-decoration: none;
-    color: $accent-color-alt;
+    color: $accent-color;
     transition: $hover-transition;
 
     &:hover {
-        color: $accent-color;
+        color: $accent-color-alt;
     }
 }

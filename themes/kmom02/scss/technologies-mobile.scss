@@ -5,16 +5,17 @@
     
     .tech-grid {
         display: grid;
+        margin: 0 auto;
         max-width: 90%;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-        'css css css css css css'
-        'html html html . . .'
-        'js js js js js js'
-        'git git git . . .'
-        'sql sql sql sql sql sql'
-        'php php php . . .'
-        'python python python python python python';
+        'css css css'
+        'html html html'
+        'js js js'
+        'git git git'
+        'sql sql sql'
+        'php php php'
+        'python python python';
     }
 
     .tech-grid > :nth-child(1) {

@@ -1,9 +1,6 @@
 @media (max-width: 700px) {
-    .tech-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
+    .side-bar {
+        display: none;
     }
     
     .tech-wrapper .content {

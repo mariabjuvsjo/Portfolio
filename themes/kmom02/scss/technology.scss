@@ -14,7 +14,7 @@
         width: 120px;
         padding: 10px 15px;
         text-align: center;
-        border: 0.5px solid rgb(147, 147, 147);
+        border: 0.5px solid $font-color;
         border-right: transparent;
         border-left: transparent;
         transition: $hover-transition;
@@ -30,43 +30,56 @@
 .content {
     max-width: 80%;
     margin: 0 auto;
+    
 }
 
 .content .syntax {
-    background-color: rgb(183, 207, 215);
-    border: 3px solid $accent-color-alt;
-    box-shadow: inset 0 0 0.5em $accent-color-alt, 0 0 0.5em $accent-color-alt;
-    color: #252525;
+    background-color: $background-color;
+    border: 0px solid $accent-color;
+    box-shadow: inset 0 0 0.5em $accent-color, 0 0 0.5em $accent-color;
+    color: $font-color;
     padding: 10px;
     border-radius: 5px;
 }
 
 .html {
-    color: #e8436d;
+    color: $filter-base;
+    filter: invert(14%) sepia(72%) saturate(6881%) hue-rotate(268deg) brightness(89%) contrast(105%);
 }
 
 .css {
-    color: #d038e8;
+    color: black;
+    filter: invert(73%) sepia(66%) saturate(5923%) hue-rotate(220deg) brightness(100%) contrast(102%);
 }   
 
 .git {
-    color: #cf37e6;
+    color: #000;
+    filter: invert(61%) sepia(96%) saturate(5739%) hue-rotate(291deg)
+    brightness(94%) contrast(94%);
 }
 
-.js {
-    color: #9c49c1;
+.js-color {
+    color:$filter-base;
+    filter: invert(24%) sepia(81%) saturate(6756%) hue-rotate(318deg) brightness(105%) contrast(98%);
+    
 }
 
 .python {
-    color: #34faff;
+    color: $filter-base;
+    filter: invert(24%) sepia(75%) saturate(6275%) hue-rotate(304deg) brightness(94%) contrast(101%);
+    
 }
 
 .sql {
-    color: #cd1dd2;
+    color: $filter-base;
+    filter: invert(38%) sepia(80%) saturate(5834%) hue-rotate(286deg)
+    brightness(92%) contrast(104%);
 }
 
 .php {
-    color: #3677e8;
+    color: $filter-base;
+    filter: invert(32%) sepia(43%) saturate(7497%) hue-rotate(270deg) brightness(96%) contrast(117%);
+
 }
 
 

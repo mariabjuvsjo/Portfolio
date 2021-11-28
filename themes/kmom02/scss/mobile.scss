@@ -13,7 +13,7 @@
       -------------------*/
     .nav a,
     .nav-toggle {
-        color: $accent-color-alt;
+        color: $accent-color;
     }
 
     .js .nav-toggle {
@@ -33,4 +33,21 @@
         width: 90%;
         padding-bottom: 50px;
     }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .start-content {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }

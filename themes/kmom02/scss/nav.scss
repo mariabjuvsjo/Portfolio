@@ -2,23 +2,23 @@
 /*-----------------------
     NAV
 -------------------*/
-.logo {
-    padding: 1em;
-}
+
 
 .nav {
     margin-right: 1em;
 }
 
+
+
 .nav a {
     text-decoration: none;
     font-family: $text-font;
-    color: $accent-color-alt;
+    color: $accent-color;
     transition: $hover-transition;
 }
 
 .nav a:hover {
-    color: $accent-color;
+    color: $accent-color-alt;
     font-size: larger;
 
 }

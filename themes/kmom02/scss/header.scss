@@ -2,24 +2,22 @@
 /*-----------------------
     HEADER
 -------------------*/
-.site-header {
-    background-color: #181818;
+.header {
+    background-color: $header-clr;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    box-shadow: 0 0 0.25em grey;
 }
 
-.site-header .logo {
-    max-width: fit-content;
-}
 
-.site-header .logo img {
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-}
-
-.site-header .title {
+.header .title {
     display: none;
+}
+
+.site-header {
+    width: 150px;
+    height: fit-content;
+    padding: 1rem;
 }

@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&display=swap");
+/* colors */
+/* fonts */
+/* transitions */
 /*extrenal imports */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -6,8 +11,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
@@ -6460,8 +6463,6 @@ readers do not read off random characters that represent icons */
 
 /*intern imports*/
 /* colors */
-/*# sourceMappingURL=variables.css.map */
-/* colors */
 /* fonts */
 /* transitions */
 * {
@@ -6483,6 +6484,25 @@ html {
   height: 100%;
 }
 
+/*
+@mixin theme($light-theme:true) {
+    @if $light-theme {
+        background-color: $background-alternative-color;
+        color: $font-alternative-color;
+
+        .site-header {
+            background-color: #dbfdff; 
+        }
+
+        .footer {
+            background-color: #dbfdff;
+        }
+    }
+}
+
+body {
+    @include theme($light-theme:false);
+}*/
 body {
   min-height: 100%;
   display: flex;
@@ -6510,79 +6530,71 @@ img {
 /*-----------------------
     TYPOGRAPHY
 -------------------*/
-/* colors */
-/* fonts */
-/* transitions */
 body {
   line-height: 1.4;
 }
 
 h1 {
-  color: #34faff;
+  color: #ED1F4F;
   letter-spacing: 3px;
   font-family: "Lexend", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: capitalize;
   text-align: center;
 }
 
 h2 {
-  color: #aa2a61;
+  color: #1FED3E;
   text-transform: capitalize;
   font-family: "Lexend", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 100;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 1.4em;
   font-family: "Roboto", sans-serif;
   margin-bottom: 1.75rem;
+  font-weight: lighter;
 }
 
 a {
   text-decoration: none;
-  color: #aa2a61;
+  color: #ED1F4F;
   transition: all 300ms ease-in;
 }
 a:hover {
-  color: #34faff;
+  color: #1FED3E;
 }
 
 /*-----------------------
     HEADER
 -------------------*/
-.site-header {
-  background-color: #181818;
+.header {
+  background-color: rgba(37, 37, 37, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  box-shadow: 0 0 0.25em grey;
 }
 
-.site-header .logo {
-  max-width: fit-content;
-}
-
-.site-header .logo img {
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-}
-
-.site-header .title {
+.header .title {
   display: none;
+}
+
+.site-header {
+  width: 150px;
+  height: fit-content;
+  padding: 1rem;
 }
 
 /*-----------------------
     NAV
 -------------------*/
-.logo {
-  padding: 1em;
-}
-
 .nav {
   margin-right: 1em;
 }
@@ -6590,12 +6602,12 @@ a:hover {
 .nav a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: #aa2a61;
+  color: #ED1F4F;
   transition: all 300ms ease-in;
 }
 
 .nav a:hover {
-  color: #34faff;
+  color: #1FED3E;
   font-size: larger;
 }
 
@@ -6603,9 +6615,41 @@ a:hover {
    MAIN CONTENT
 -------------------*/
 .main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----------------------
+  LANDING PAGE
+-------------------*/
+.start-content {
+  margin-top: 30px;
+  display: flex;
+}
+
+.main-text {
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+img[src*="#imgStart"] {
+  outline: 2px solid #1FED3E;
+  max-width: 100%;
+  display: block;
+  transition: all 300ms ease-in;
+  border-radius: 10px;
+}
+
+img[src*="#imgStart"]:hover {
+  outline-offset: 5px;
+}
+
+img[src*="#imgAbout"] {
+  filter: invert(36%) sepia(71%) saturate(6646%) hue-rotate(332deg) brightness(92%) contrast(103%);
 }
 
 .slide {
@@ -6623,7 +6667,7 @@ a:hover {
     -------------------*/
   .nav a,
 .nav-toggle {
-    color: #aa2a61;
+    color: #ED1F4F;
   }
 
   .js .nav-toggle {
@@ -6637,10 +6681,25 @@ a:hover {
 
   /*-----------------------
         MAIN
-    -------------------*/
+  -------------------*/
   .main {
     width: 90%;
     padding-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .start-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /*-----------------------
@@ -6648,12 +6707,15 @@ a:hover {
 -------------------*/
 .footer {
   margin-top: auto;
-  min-height: 200px;
-  background-color: #aa2a61;
+  min-height: 100px;
+  background-color: #ED1F4F;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+.footer p {
+  color: #1d1d1d;
 }
 
 .social a {
@@ -6662,13 +6724,21 @@ a:hover {
   transition: all 300ms ease-in;
 }
 .social a:hover {
-  font-size: 3rem;
-  color: #34faff;
+  color: #1FED3E;
+}
+
+.theme-btn i {
+  font-size: 1.5rem;
+  color: #1d1d1d;
+  transition: all 300ms ease-in;
+}
+.theme-btn i:hover {
+  color: #1FED3E;
 }
 
 .main.tech {
   max-width: 1200px;
-  perspective: 50rem;
+  perspective: 80rem;
   margin-bottom: 60px;
 }
 
@@ -6683,13 +6753,12 @@ a:hover {
 }
 
 .tech-box {
-  border: 1px solid black;
+  border: 2px solid #000;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 0.5em;
   transition: transform 400ms ease-in-out;
 }
 
@@ -6705,12 +6774,12 @@ a:hover {
 }
 
 .tech-grid > :nth-child(1) {
-  filter: invert(35%) sepia(75%) saturate(2570%) hue-rotate(271deg) brightness(91%) contrast(101%);
+  filter: invert(73%) sepia(66%) saturate(5923%) hue-rotate(220deg) brightness(100%) contrast(102%);
   grid-row: 1/2;
 }
 
 .tech-grid > :nth-child(2) {
-  filter: invert(61%) sepia(96%) saturate(5739%) hue-rotate(291deg) brightness(94%) contrast(94%);
+  filter: invert(49%) sepia(97%) saturate(6675%) hue-rotate(285deg) brightness(95%) contrast(117%);
   grid-row: 2/3;
   grid-column: 1/2;
 }
@@ -6720,37 +6789,37 @@ a:hover {
 }
 
 .tech-grid > :nth-child(3) {
-  filter: invert(31%) sepia(64%) saturate(2264%) hue-rotate(321deg) brightness(95%) contrast(91%);
-  -ms-filter: invert(31%) sepia(64%) saturate(2264%) hue-rotate(321deg) brightness(95%) contrast(91%);
+  filter: invert(14%) sepia(72%) saturate(6881%) hue-rotate(268deg) brightness(89%) contrast(105%);
   grid-row: 1/2;
   grid-column: 2/span 2;
 }
 
 .tech-grid > :nth-child(4) {
-  filter: invert(30%) sepia(100%) saturate(5362%) hue-rotate(248deg) brightness(92%) contrast(98%);
+  filter: invert(24%) sepia(81%) saturate(6756%) hue-rotate(318deg) brightness(105%) contrast(98%);
   grid-row: 2/3;
-  grid-column: 2/5;
+  grid-column: 3/5;
 }
 
 .tech-grid > :nth-child(5) {
-  filter: invert(39%) sepia(70%) saturate(1540%) hue-rotate(203deg) brightness(93%) contrast(95%);
+  filter: invert(32%) sepia(43%) saturate(7497%) hue-rotate(270deg) brightness(96%) contrast(117%);
   grid-row: 1/2;
   grid-column: 4/5;
 }
 
 .tech-grid > :nth-child(6) {
-  filter: invert(73%) sepia(82%) saturate(832%) hue-rotate(150deg) brightness(104%) contrast(109%);
-  grid-column: 1/3;
-  grid-row: 3/4;
+  filter: invert(24%) sepia(75%) saturate(6275%) hue-rotate(304deg) brightness(94%) contrast(101%);
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .tech-grid > :nth-child(6)::before {
   content: "PYTHON ";
+  filter: invert(24%) sepia(75%) saturate(6275%) hue-rotate(304deg) brightness(94%) contrast(101%);
 }
 
 .tech-grid > :nth-child(7) {
   filter: invert(38%) sepia(80%) saturate(5834%) hue-rotate(286deg) brightness(92%) contrast(104%);
-  grid-column: 3/5;
+  grid-column: 1/5;
   grid-row: 3/4;
 }
 
@@ -6765,9 +6834,10 @@ a:hover {
 
   .tech-grid {
     display: grid;
+    margin: 0 auto;
     max-width: 90%;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "css css css css css css" "html html html . . ." "js js js js js js" "git git git . . ." "sql sql sql sql sql sql" "php php php . . ." "python python python python python python";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "css css css" "html html html" "js js js" "git git git" "sql sql sql" "php php php" "python python python";
   }
 
   .tech-grid > :nth-child(1) {
@@ -6814,52 +6884,15 @@ a:hover {
   width: 120px;
   padding: 10px 15px;
   text-align: center;
-  border: 0.5px solid #939393;
+  border: 0.5px solid #f7fcfc;
   border-right: transparent;
   border-left: transparent;
   transition: all 300ms ease-in;
 }
 .side-bar ul li:hover {
-  border: 2px solid #34faff;
+  border: 2px solid #ED1F4F;
   border-right: transparent;
   border-left: transparent;
-}
-
-.content .syntax {
-  background-color: #b7cfd7;
-  border: 3px solid #aa2a61;
-  box-shadow: inset 0 0 0.5em #aa2a61, 0 0 0.5em #aa2a61;
-  color: #252525;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.html {
-  color: #e8436d;
-}
-
-.css {
-  color: #d038e8;
-}
-
-.git {
-  color: #cf37e6;
-}
-
-.js {
-  color: #9c49c1;
-}
-
-.python {
-  color: #34faff;
-}
-
-.sql {
-  color: #cd1dd2;
-}
-
-.php {
-  color: #3677e8;
 }
 
 .content {
@@ -6867,12 +6900,53 @@ a:hover {
   margin: 0 auto;
 }
 
+.content .syntax {
+  background-color: #1d1d1d;
+  border: 0px solid #ED1F4F;
+  box-shadow: inset 0 0 0.5em #ED1F4F, 0 0 0.5em #ED1F4F;
+  color: #f7fcfc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.html {
+  color: #000;
+  filter: invert(14%) sepia(72%) saturate(6881%) hue-rotate(268deg) brightness(89%) contrast(105%);
+}
+
+.css {
+  color: black;
+  filter: invert(73%) sepia(66%) saturate(5923%) hue-rotate(220deg) brightness(100%) contrast(102%);
+}
+
+.git {
+  color: #000;
+  filter: invert(61%) sepia(96%) saturate(5739%) hue-rotate(291deg) brightness(94%) contrast(94%);
+}
+
+.js-color {
+  color: #000;
+  filter: invert(24%) sepia(81%) saturate(6756%) hue-rotate(318deg) brightness(105%) contrast(98%);
+}
+
+.python {
+  color: #000;
+  filter: invert(24%) sepia(75%) saturate(6275%) hue-rotate(304deg) brightness(94%) contrast(101%);
+}
+
+.sql {
+  color: #000;
+  filter: invert(38%) sepia(80%) saturate(5834%) hue-rotate(286deg) brightness(92%) contrast(104%);
+}
+
+.php {
+  color: #000;
+  filter: invert(32%) sepia(43%) saturate(7497%) hue-rotate(270deg) brightness(96%) contrast(117%);
+}
+
 @media (max-width: 700px) {
-  .tech-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+  .side-bar {
+    display: none;
   }
 
   .tech-wrapper .content {

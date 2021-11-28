@@ -1,5 +1,6 @@
 ---
-Logo: image/mw-logo.png
+Logo: image/logo1.png
+Logo2: image/logo1.svg.png
 Tagline: My portfolio.
 Social:
   - title: Link till sidans github repo.
