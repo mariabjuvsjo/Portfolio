@@ -1,0 +1,11 @@
+@media (max-width: 700px){
+    .rapport-wrapper {
+    flex-direction: column;
+    transform: unset;
+    }
+
+    .rapport-box {
+        margin-bottom: 20px;
+        font-size: 1.55rem;
+    }
+}

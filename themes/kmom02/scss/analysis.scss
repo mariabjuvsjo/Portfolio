@@ -1,0 +1,32 @@
+.main.analysis {
+    perspective: 80rem;
+}
+
+
+.rapport-wrapper {
+    display: flex;
+    transform: rotateY(30deg);
+
+}
+
+
+.rapport-box {
+    border: 2px solid $accent-color-alt ;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease-in-out;
+    font-size: 2rem;
+    font-family: $main-font;
+}
+
+.rapport-box:hover,
+.rapport-box:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 1em $accent-color-alt;
+}

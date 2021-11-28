@@ -3,17 +3,18 @@
 <body>
 	{% include 'incl/nav.twig' %}
 
-	<div class="main">
+	<div class="main analysis">
 		{{ content }}
-		<div>
+		<div class="rapport-wrapper">
 			{% for page in pages("analysis")%}
 
-				<a href="{{ page.url }}">
+				<a href="{{ page.url }}" class="rapport-box">
 					{{page.title}}
 				</a>
 
 			{% endfor %}
 		</div>
 	</div>
+
 	{% include 'incl/footer.twig' %}
 </body></html>

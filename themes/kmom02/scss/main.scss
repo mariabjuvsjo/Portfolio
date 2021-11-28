@@ -3,7 +3,7 @@
 -------------------*/
 
 .main {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@
 
 .start-content {
     margin-top: 30px;
-    
+    max-width: 90%;
     display: flex;
 }
 
@@ -29,7 +29,7 @@
 
 img[src*="#imgStart"] {
     outline: 2px solid $accent-color-alt;
-    max-width: 100%;
+    min-width: 200px;
     display: block;
     transition: $hover-transition;
     border-radius: 10px; 
