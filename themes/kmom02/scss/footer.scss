@@ -5,15 +5,17 @@
 .footer {
     //sticky footer
     margin-top: auto;
+    padding: 20px;
     min-height: 100px;
-    background-color: $accent-color;
+    background-color: $header-clr;
+    box-shadow: 0 0 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 
     p {
-        color: $background-color;
+        color: $accent-color-alt;
     }
 }
 
@@ -21,7 +23,7 @@
 
 .social a {
     font-size: 1.5rem;
-    color: $background-color;
+    color: $accent-color;
     transition: $hover-transition;
 
     &:hover {
@@ -31,7 +33,7 @@
 
 .theme-btn i {
     font-size: 1.5rem;
-    color: $background-color;
+    color: $accent-color;
     transition: $hover-transition;
 
     &:hover {

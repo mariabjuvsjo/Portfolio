@@ -6703,20 +6703,22 @@ img[src*="#imgAbout"] {
 -------------------*/
 .footer {
   margin-top: auto;
+  padding: 20px;
   min-height: 100px;
-  background-color: #16171b;
+  background-color: #e0d9d1;
+  box-shadow: 0 0 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 .footer p {
-  color: #e0d9d1;
+  color: #ee005c;
 }
 
 .social a {
   font-size: 1.5rem;
-  color: #e0d9d1;
+  color: #16171b;
   transition: all 300ms ease-in;
 }
 .social a:hover {
@@ -6725,7 +6727,7 @@ img[src*="#imgAbout"] {
 
 .theme-btn i {
   font-size: 1.5rem;
-  color: #e0d9d1;
+  color: #16171b;
   transition: all 300ms ease-in;
 }
 .theme-btn i:hover {
