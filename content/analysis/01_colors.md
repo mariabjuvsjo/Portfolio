@@ -49,7 +49,7 @@ När det kommer till rubriker så matchar även här valet av typsnitt loggan. M
 
 
 
-![ica](../image/ica.png?w=500)
+![ica](../image/ica.png?w=500&save-as=jpg)
 
 ###HEMKÖP
 
@@ -69,13 +69,13 @@ Nästa sida jag tittat på är Hemköp. Deras färgval liknar mest ett triad fä
 
 Eftersom Hemköpslogga har en ganska speciell och kanske inte så läsvänlig stil så kan jag förstå att typsnittet är svårt att matcha. Men man kan konstatera att typsnittet inte alls matchar loggan. Hemköp har Serif tysnitt i rubrikerna och sans-serif i brödtexten. Man skulle ju kunna tänka att rubrikerna kunde vara sans-serif eftersom loggan är det.
 
-![hemköp](../image/hemkop.png?w=500)
+![hemköp](../image/hemkop.png?w=500&save-as=jpg)
 
 För egen del tycker jag att webbplatsen känns rörig och inget riktigt flow man känner sig inte heller riktigt trygg när det kommer till färgerna och typsnitt. 
 
 Jag kan konstatera att det är mycket troligt att man valt rött och gult som färg, då det är mycket vanligt när man vill locka kunder att tro att priserna är billiga. För mig blir det även här förvirrande då man har svårt att förstå om det är den gula eller röda färgen som symboliserar extrapris, då de blandar färgerna lite här och var.
 
-![hemköp2](../image/hemkop2.png?w=400)
+![hemköp2](../image/hemkop2.png?w=400&save-as=jpg)
 Bildtext: Vilken vara är nedsatt?
 
 ###JORDKLOK
@@ -96,7 +96,7 @@ Webbplatsen Jordklok som ägnar sig åt att sälja ekologiska produkter på nät
 
 Färgerna ligger kanske inte super nära varandra på färgskalan men de kompletterar varandra med samma ton. Sedan har varje komplementfärgpar ett analogt och eller kan också vara ett nyansfärgschema. Både den mörkblå, gröna och bruna färgen har olika ljusare toner av sin egen färg. Typsnittet på rubrikerna är samma som loggan och riktigt snyggt. 
 
-![jordklok](../image/jordklok.png?w=500)
+![jordklok](../image/jordklok.png?w=500&save-as=jpg)
 
 Analys
 -----------------------

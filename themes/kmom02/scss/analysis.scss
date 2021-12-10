@@ -11,7 +11,7 @@
 
 
 .rapport-box {
-    border: 2px solid $accent-color-alt ;
+    border: 2px solid $accent-color-alt;
     padding: 20px;
     width: 200px;
     height: 100px;
@@ -29,4 +29,21 @@
 .rapport-box:focus {
     transform: scale(1.05);
     box-shadow: 0 0 1em $accent-color-alt;
+}
+
+
+//load analys
+
+.spread-sheet {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.spread-sheet iframe {
+    width: 80%;
+    height: 80%;
 }

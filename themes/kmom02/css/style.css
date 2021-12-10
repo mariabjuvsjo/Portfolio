@@ -6535,7 +6535,7 @@ body {
 }
 
 h1 {
-  color: #ED1F4F;
+  color: #ed1f4f;
   letter-spacing: 3px;
   font-family: "Lexend", sans-serif;
   font-size: 4rem;
@@ -6544,7 +6544,7 @@ h1 {
 }
 
 h2 {
-  color: #1FED3E;
+  color: #1fed3e;
   text-transform: capitalize;
   font-family: "Lexend", sans-serif;
   font-size: 2.5rem;
@@ -6563,11 +6563,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #ED1F4F;
+  color: #ed1f4f;
   transition: all 300ms ease-in;
 }
 a:hover {
-  color: #1FED3E;
+  color: #1fed3e;
 }
 
 /*-----------------------
@@ -6579,7 +6579,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  box-shadow: 0 0 0.25em grey;
+  box-shadow: 0 0 0.25em #f7fcfc;
 }
 
 .header .title {
@@ -6602,12 +6602,12 @@ a:hover {
 .nav a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: #ED1F4F;
+  color: #ed1f4f;
   transition: all 300ms ease-in;
 }
 
 .nav a:hover {
-  color: #1FED3E;
+  color: #1fed3e;
   font-size: larger;
 }
 
@@ -6638,7 +6638,7 @@ a:hover {
 }
 
 img[src*="#imgStart"] {
-  outline: 2px solid #1FED3E;
+  outline: 2px solid #1fed3e;
   min-width: 200px;
   display: block;
   transition: all 300ms ease-in;
@@ -6668,7 +6668,7 @@ img[src*="#imgAbout"] {
     -------------------*/
   .nav a,
 .nav-toggle {
-    color: #ED1F4F;
+    color: #ed1f4f;
   }
 
   .js .nav-toggle {
@@ -6718,25 +6718,25 @@ img[src*="#imgAbout"] {
   justify-content: flex-end;
 }
 .footer p {
-  color: #1FED3E;
+  color: #1fed3e;
 }
 
 .social a {
   font-size: 1.5rem;
-  color: #ED1F4F;
+  color: #ed1f4f;
   transition: all 300ms ease-in;
 }
 .social a:hover {
-  color: #1FED3E;
+  color: #1fed3e;
 }
 
 .theme-btn i {
   font-size: 1.5rem;
-  color: #ED1F4F;
+  color: #ed1f4f;
   transition: all 300ms ease-in;
 }
 .theme-btn i:hover {
-  color: #1FED3E;
+  color: #1fed3e;
 }
 
 .main.tech {
@@ -6893,7 +6893,7 @@ img[src*="#imgAbout"] {
   transition: all 300ms ease-in;
 }
 .side-bar ul li:hover {
-  border: 2px solid #ED1F4F;
+  border: 2px solid #ed1f4f;
   border-right: transparent;
   border-left: transparent;
 }
@@ -6905,8 +6905,8 @@ img[src*="#imgAbout"] {
 
 .content .syntax {
   background-color: #252525;
-  border: 0px solid #ED1F4F;
-  box-shadow: inset 0 0 0.5em #ED1F4F, 0 0 0.5em #ED1F4F;
+  border: 1px solid #ed1f4f;
+  box-shadow: inset 0 0 0.5em #ed1f4f, 0 0 0.5em #ed1f4f;
   color: #f7fcfc;
   padding: 10px;
   border-radius: 5px;
@@ -6918,7 +6918,7 @@ img[src*="#imgAbout"] {
 }
 
 .css {
-  color: black;
+  color: #000;
   filter: invert(73%) sepia(66%) saturate(5923%) hue-rotate(220deg) brightness(100%) contrast(102%);
 }
 
@@ -6974,7 +6974,7 @@ img[src*="#imgAbout"] {
 }
 
 .rapport-box {
-  border: 2px solid #1FED3E;
+  border: 2px solid #1fed3e;
   padding: 20px;
   width: 200px;
   height: 100px;
@@ -6991,7 +6991,20 @@ img[src*="#imgAbout"] {
 .rapport-box:hover,
 .rapport-box:focus {
   transform: scale(1.05);
-  box-shadow: 0 0 1em #1FED3E;
+  box-shadow: 0 0 1em #1fed3e;
+}
+
+.spread-sheet {
+  width: 90%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spread-sheet iframe {
+  width: 80%;
+  height: 80%;
 }
 
 @media (max-width: 700px) {
@@ -7003,5 +7016,68 @@ img[src*="#imgAbout"] {
   .rapport-box {
     margin-bottom: 20px;
     font-size: 1.55rem;
+  }
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .gallery-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+}
+
+.gallery-container > :nth-child(9) {
+  filter: brightness(1.25);
+}
+
+.gallery-container > :nth-child(12) {
+  filter: brightness(1.3);
+}
+
+.gallery-container > :last-child {
+  grid-column: 1/-1;
+}
+
+.gallery-container a {
+  transition: opacity 200ms ease-in;
+  box-shadow: 0 0 0.2em #f7fcfc;
+}
+
+.gallery-container a:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .main .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .main .gallery-container {
+    grid-template-columns: 1fr;
   }
 }
