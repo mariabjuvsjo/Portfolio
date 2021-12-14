@@ -4,17 +4,18 @@
 
 $font-color: #f7fcfc;
 $font-alternative-color: #1d1d1d;
-$header-clr: rgba(37, 37, 37, 0.8);
-$accent-color: #ed1f4f;
-$accent-color-alt: #1fed3e;
+$header-clr: #222;
+$accent-color-alt: #ed1f4f;
+$accent-color: #1fed3e;
 $background-color: #252525;
 $background-alternative-color: #f7fcfc;
 $filter-base: #000;
 
 /* fonts */
 
-$main-font: 'Lexend', sans-serif;
-$text-font: 'Roboto', sans-serif;
+$main-font:'Inconsolata', monospace;
+$text-font: 'Inconsolata', monospace;
+$content-font: 'Roboto', sans-serif;
 
 /* transitions */
 

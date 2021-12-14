@@ -4,21 +4,162 @@
 -------------------*/
 
 
-.nav {
+.nav-bar {
     margin-right: 1em;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+ 
 }
 
 
 
-.nav a {
+.nav-bar a {
     text-decoration: none;
     font-family: $text-font;
     color: $accent-color;
     transition: $hover-transition;
+    margin-right: 20px;
 }
 
-.nav a:hover {
+.nav-bar a:hover {
     color: $accent-color-alt;
-    font-size: larger;
+}
+
+.menu-btn, .menu-btn-label {
+    display: none;
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    position: relative;
+    color: $accent-color;
+    font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+    color: $accent-color-alt;
 
 }
+
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    background: $accent-color;
+    transform: scale(0,1);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+    }
+
+    .nav-bar a:hover::before {
+        transform: scale(1,1);
+        transform-origin: left;
+    }
+
+
+/*NAVBAR LAYOUT TABLET
+
+HAMBURGER MENU-----------------------------------*/
+
+@media only screen and (max-width:768px) {
+
+    .nav-bar {
+        position: relative;
+        width: 50%;
+    }
+
+    .nav-bar a {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar ul {
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        right: 0;
+        top: 0;
+        background-color: rgba($color: $background-color, $alpha: 0.8);
+        width: 100vw;
+        height: 100vh;
+        transform: scale(0,1);
+        transform-origin: right;
+        transition: all 500ms ease-out;
+    }
+
+
+
+    .menu-btn:checked ~ ul {
+        transform: scale(1,1);
+        transition: all 500ms ease-in;
+        z-index: 999;
+
+    }
+
+     .menu-btn-label {
+        display: unset;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        margin-right: 20px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .menu-btn-label span,
+    .menu-btn-label span::before,
+    .menu-btn-label span::after {
+        display: block;
+        background: $accent-color;
+        height: 2px;
+        width: 30px;
+        position: relative;
+    }
+
+    .menu-btn-label span::before,
+    .menu-btn-label span::after {
+        content: "";
+        position: absolute;
+    }
+
+    .menu-btn-label span::before {
+        bottom: 8px;
+    }
+
+    .menu-btn-label span::after {
+        top: 8px;
+    }
+
+    .menu-btn:checked ~ .menu-btn-label span {
+        background: transparent;
+    }
+        
+    .menu-btn:checked ~ .menu-btn-label span::before {
+        transform: rotate(-45deg);
+        transition: transform linear 200ms;
+        bottom: 0;
+    }
+        
+    .menu-btn:checked ~ .menu-btn-label span::after {
+            transform: rotate(45deg);
+            transition: transform linear 200ms;
+            top: 0;
+    }      
+}
+
+

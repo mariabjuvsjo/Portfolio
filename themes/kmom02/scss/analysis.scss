@@ -6,6 +6,7 @@
 .rapport-wrapper {
     display: flex;
     transform: rotateY(30deg);
+    margin-top: 30px;
 
 }
 
@@ -38,6 +39,7 @@
     width: 90%;
     height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -47,3 +49,18 @@
     width: 80%;
     height: 80%;
 }
+
+//DESIGN ANALYSIS
+
+.main b {
+    color: $accent-color;
+}
+
+.main ul {
+    list-style: none;
+}
+
+.main li {
+    color: $accent-color;
+}
+

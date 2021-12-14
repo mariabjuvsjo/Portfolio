@@ -35,7 +35,8 @@ Resultat
 -----------------------
 
 <div class= "spread-sheet">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5H6QZokkndp1UpsRWRFZExaVffZoFx7TEKuvK9nXezflhhZTtYeZ_6GZVogAtQ3Y1z460v9LCMDwk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe></div>
+
+<iframe title="My Analysis rapport in Excel"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5H6QZokkndp1UpsRWRFZExaVffZoFx7TEKuvK9nXezflhhZTtYeZ_6GZVogAtQ3Y1z460v9LCMDwk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe></div>
 
 ###AVANZA
 

@@ -3,27 +3,12 @@
     transition: height 0.5s ease-in !important;
 }
 
-.nav-toggle {
-    display: none;
-}
+
 
 @media (max-width: 767px) {
     /*-----------------------
           NAV
       -------------------*/
-    .nav a,
-    .nav-toggle {
-        color: $accent-color;
-    }
-
-    .js .nav-toggle {
-        display: block;
-        width: 2em;
-        font-size: 1.75rem;
-        line-height: 2em;
-        text-align: center;
-        cursor: pointer;
-    }
 
     /*-----------------------
         MAIN
@@ -34,20 +19,31 @@
         padding-bottom: 50px;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .start-content {
-        margin-top: 30px;
+    .landing-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transform: unset;
     }
+
+    .landing-grid h1 {
+        font-size: 3rem;
+        padding: 5px;
+        
+    }
+
+    .landing-grid h2 {
+        position: unset;
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .landing-grid h2 span {
+        animation: unset;
+        position: unset;
+    }
+
+
 
 
 }
